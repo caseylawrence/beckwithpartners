@@ -197,7 +197,8 @@ header .header-content .header-content-inner h1 {
     margin-top: 0;
     margin-bottom: 0;
     text-transform: uppercase;
-    font-weight: 700;
+    font-family: "Times New Roman", serif;
+    font-weight: 400;
 }
 
 header .header-content .header-content-inner hr {
@@ -473,4 +474,9 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #222;
+}
+
+.header-content-inner > hr:nth-child(8) {
+    margin-top: 0 !important;
+    margin-bottom: 40px !important;
 }
