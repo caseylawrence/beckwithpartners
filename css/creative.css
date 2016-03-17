@@ -14,6 +14,11 @@ body {
     font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
 }
 
+.name {
+    text-shadow: 2px 2px black;
+    font-weight: bolder;
+}
+
 hr {
     max-width: 50px;
     border-color: #f05f40;
@@ -42,7 +47,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Merriweather','Helvetica Neue',Arial,sans-serif;
 }
 
 p {
@@ -175,15 +180,19 @@ aside {
 header {
     position: relative;
     width: 100%;
-    min-height: auto;
+    height:70%;
     text-align: center;
     color: #fff;
-    background-image: url(../img/header.jpg);
-    background-position: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    background: url(../img/header.jpg) no-repeat center;
+    background-size: 100%;
+}
+
+
+.list-unstyled li {
+    font-size:24px;
+    text-shadow: 2px 2px black;
+    text-align: left;
+    margin-left:30%;
 }
 
 header .header-content {
@@ -197,8 +206,7 @@ header .header-content .header-content-inner h1 {
     margin-top: 0;
     margin-bottom: 0;
     text-transform: uppercase;
-    font-family: "Times New Roman", serif;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 header .header-content .header-content-inner hr {
@@ -214,7 +222,7 @@ header .header-content .header-content-inner p {
 
 @media(min-width:768px) {
     header {
-        min-height: 100%;
+        min-height: 60%;
     }
 
     header .header-content {
@@ -236,7 +244,9 @@ header .header-content .header-content-inner p {
         margin-right: auto;
         margin-left: auto;
         max-width: 80%;
-        font-size: 18px;
+        font-size: 24px;
+        color: white;
+        text-shadow: 1px 1px black;
     }
 }
 
@@ -386,9 +396,9 @@ fieldset[disabled] .btn-default.active {
 }
 
 .btn-primary {
-    border-color: #f05f40;
+    border-color: #ab1b1d;
     color: #fff;
-    background-color: #f05f40;
+    background-color: #ab1b1d;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -400,9 +410,9 @@ fieldset[disabled] .btn-default.active {
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-    border-color: #ed431f;
+    border-color: #ab1b1d;
     color: #fff;
-    background-color: #ee4b28;
+    background-color: #ab1b1d;
 }
 
 .btn-primary:active,
@@ -429,8 +439,8 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-    border-color: #f05f40;
-    background-color: #f05f40;
+    border-color: #ab1b1d;
+    background-color: #ab1b1d;
 }
 
 .btn-primary .badge {
@@ -479,4 +489,27 @@ body {
 .header-content-inner > hr:nth-child(8) {
     margin-top: 0 !important;
     margin-bottom: 40px !important;
+}
+
+@media(max-width:768px) {
+    header {
+        height:100vh;
+    }
+    .col-sm-6 {
+        margin-top:10%;
+    }
+}
+
+.no-margin > li  {
+    margin: 0px;
+}
+
+.btn-block {
+    padding:20px;
+    font-size:24px;
+    margin-top:15%;
+}
+
+a.btn-block:hover {
+    text-decoration: none;
 }
