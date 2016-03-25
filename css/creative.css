@@ -8,7 +8,6 @@ html,
 body {
     width: 100%;
     height: 100%;
-    text-shadow: 1px 1px #000;
 }
 
 body {
@@ -17,7 +16,7 @@ body {
 
 hr {
     max-width: 50px;
-    border-color: #ca2119;
+    border-color: #f05f40;
     border-width: 3px;
 }
 
@@ -176,11 +175,15 @@ aside {
 header {
     position: relative;
     width: 100%;
-    height: 80%;
+    min-height: auto;
     text-align: center;
     color: #fff;
-    background: url(../img/header.jpg) center no-repeat;
+    background-image: url(../img/header.jpg);
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
     background-size: cover;
+    -o-background-size: cover;
 }
 
 header .header-content {
@@ -195,7 +198,7 @@ header .header-content .header-content-inner h1 {
     margin-bottom: 0;
     text-transform: uppercase;
     font-family: "Times New Roman", serif;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 header .header-content .header-content-inner hr {
@@ -205,11 +208,15 @@ header .header-content .header-content-inner hr {
 header .header-content .header-content-inner p {
     margin-bottom: 50px;
     font-size: 16px;
-    font-weight: 500;
-    color: rgba(255,255,255,.9);
+    font-weight: 300;
+    color: rgba(255,255,255,.7);
 }
 
 @media(min-width:768px) {
+    header {
+        min-height: 100%;
+    }
+
     header .header-content {
         position: absolute;
         top: 50%;
