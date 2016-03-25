@@ -8,6 +8,7 @@ html,
 body {
     width: 100%;
     height: 100%;
+    text-shadow: 1px 1px black;
 }
 
 body {
@@ -16,7 +17,7 @@ body {
 
 hr {
     max-width: 50px;
-    border-color: #f05f40;
+    border-color: #c9302c;
     border-width: 3px;
 }
 
@@ -208,7 +209,7 @@ header .header-content .header-content-inner hr {
 header .header-content .header-content-inner p {
     margin-bottom: 50px;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 500;
     color: rgba(255,255,255,.7);
 }
 
@@ -386,9 +387,9 @@ fieldset[disabled] .btn-default.active {
 }
 
 .btn-primary {
-    border-color: #f05f40;
+    border-color: #c9302c;
     color: #fff;
-    background-color: #f05f40;
+    background-color: #c9302c;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -447,7 +448,9 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .btn-xl {
-    padding: 15px 30px;
+    padding: 30px 30px;
+    font-size:20px;
+    border-radius: 10px;
 }
 
 ::-moz-selection {
@@ -479,4 +482,8 @@ body {
 .header-content-inner > hr:nth-child(8) {
     margin-top: 0 !important;
     margin-bottom: 40px !important;
+}
+
+.no-shadow {
+    text-shadow: none;
 }
